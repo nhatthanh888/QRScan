@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Twitter"
+            android:textAppearance="@style/style_title_toolbar"
+            app:layout_constraintBottom_toTopOf="@id/vLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="@dimen/_14sdp"
+            android:src="@drawable/arrow_left"
+            app:layout_constraintBottom_toTopOf="@id/vLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#EDEDED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_toolbar" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/tabLayout"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:tabTextAppearance="@style/style_text_tabLayout"
+            android:background="@drawable/custom_bg_tab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tabIndicatorColor="@null"
+            app:tabIndicatorGravity="stretch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabIndicator="@drawable/custom_tab_selected"
+            app:tabMode="fixed"
+            app:layout_constraintTop_toBottomOf="@id/vLine"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#B3B3B3">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:text="@string/username"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:text="@string/URL"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Twitter_Username"
+            android:textAppearance="@style/style_item_scan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout"
+            android:textSize="@dimen/_12sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edProfileID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_bg_scan_result"
+            android:gravity="top"
+            android:textSize="@dimen/_12sdp"
+            android:hint="@string/e_g_JohnDoe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvText"
+            android:inputType="text"
+            android:padding="16dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInvalidCoordinate"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:text="@string/Invalid_coordinate"
+            android:textAppearance="@style/style_validate_lat_long"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edProfileID" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCreated"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/custom_button_blue"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="@string/Create"
+            android:textAppearance="@style/style_text_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

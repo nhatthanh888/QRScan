@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_bg_scan_result"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Phone"
+        android:textAppearance="@style/style_title_result" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPhoneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="http://howtostartanllc.com/phone-qrcode"
+        android:textAppearance="@style/style_value_result"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:textAppearance="@style/style_title_result" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="http://howtostartanllc.com/phone-qrcode"
+        android:textAppearance="@style/style_value_result"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUrl"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/URL"
+        android:textAppearance="@style/style_title_result" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUrlValue"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:text="http://howtostartanllc.com/phone-qrcode"
+        android:textAppearance="@style/style_value_result"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Note"
+        android:textAppearance="@style/style_title_result" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNoteValue"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:text="http://howtostartanllc.com/phone-qrcode"
+        android:textAppearance="@style/style_value_result"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBirthday"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Birthday"
+        android:textAppearance="@style/style_title_result" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBirthdayValue"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:text="http://howtostartanllc.com/phone-qrcode"
+        android:textAppearance="@style/style_value_result"
+        tools:ignore="HardcodedText" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Calendar"
+            android:textAppearance="@style/style_title_toolbar"
+            app:layout_constraintBottom_toTopOf="@id/vLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="@dimen/_14sdp"
+            android:src="@drawable/arrow_left"
+            app:layout_constraintBottom_toTopOf="@id/vLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#EDEDED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            app:layout_constraintBottom_toTopOf="@id/btnCreated"
+            app:layout_constraintTop_toBottomOf="@id/vLine">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTextPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="@string/Event_Title"
+                    android:textAppearance="@style/style_item_scan"
+                    app:layout_constraintStart_toStartOf="@id/edtEvent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_marginHorizontal="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:background="@drawable/custom_bg_scan_result"
+                    android:hint="@string/Event_Title"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/_7sdp"
+                    android:textColorHint="@color/color_text_hint"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextPhone" />
+
+                <TextView
+                    android:id="@+id/tvTextAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="@string/Address"
+                    android:textAppearance="@style/style_item_scan"
+                    app:layout_constraintStart_toStartOf="@id/edtEvent"
+                    app:layout_constraintTop_toBottomOf="@id/edtEvent" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_marginHorizontal="@dimen/_17sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/custom_bg_scan_result"
+                    android:hint="@string/Address"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/_7sdp"
+                    android:textColorHint="@color/color_text_hint"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextAddress" />
+
+                <TextView
+                    android:id="@+id/tvTextStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="@string/Start_Date"
+                    android:textAppearance="@style/style_item_scan"
+                    app:layout_constraintStart_toStartOf="@id/edtEvent"
+                    app:layout_constraintTop_toBottomOf="@id/edtAddress" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_marginHorizontal="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/custom_bg_scan_result"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_7sdp"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextStartDate">
+
+                    <TextView
+                        android:id="@+id/tvStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:hint="@string/Start_Date"
+                        android:textColorHint="@color/color_text_hint"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/arrow_right"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tvTextEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="@string/End_Date"
+                    android:textAppearance="@style/style_item_scan"
+                    app:layout_constraintStart_toStartOf="@id/edtEvent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_startdate" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_marginHorizontal="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/custom_bg_scan_result"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_7sdp"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextEndDate">
+
+                    <TextView
+                        android:id="@+id/tvEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:hint="@string/End_Date"
+                        android:textColorHint="@color/color_text_hint"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/arrow_right"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tvTextWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="@string/Website"
+                    android:textAppearance="@style/style_item_scan"
+                    app:layout_constraintStart_toStartOf="@id/edtEvent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_enddate" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edLinkWeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_bg_scan_result"
+                    android:gravity="top"
+                    android:hint="@string/Please_enter_weblink"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/_12sdp"
+                    android:lines="5"
+                    android:overScrollMode="always"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextWebsite"
+                    android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+                <TextView
+                    android:id="@+id/tvTextNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="@string/Note"
+                    android:textAppearance="@style/style_item_scan"
+                    app:layout_constraintStart_toStartOf="@id/edtEvent"
+                    app:layout_constraintTop_toBottomOf="@id/edLinkWeb" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_bg_scan_result"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:overScrollMode="always"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="16dp"
+                    android:scrollbars="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTextNote"
+                    android:layout_marginBottom="@dimen/_21sdp"
+                    android:windowSoftInputMode="stateHidden|adjustPan"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCreated"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/custom_button_blue"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="@string/Create"
+            android:textAppearance="@style/style_text_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

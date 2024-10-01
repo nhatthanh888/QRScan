@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/history"
+        android:title="@string/History" />
+    <item
+        android:id="@+id/create"
+        android:icon="@drawable/create"
+        android:title="@string/Create" />
+    <item
+        android:id="@+id/scan"
+        android:title="" />
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/favorite"
+        android:title="@string/Favorite" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting"
+        android:title="@string/Settings" />
+
+</menu>

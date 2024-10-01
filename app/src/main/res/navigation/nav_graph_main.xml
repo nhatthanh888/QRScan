@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        tools:layout="@layout/fragment_splash"
+        android:name="com.example.qrscan.ui.fragment.wellcome.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_walkThroughtFragment1"
+            app:destination="@id/walkThroughtFragment1"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/walkThroughtFragment1"
+        tools:layout="@layout/fragment_walkthrounght1"
+        android:name="com.example.qrscan.ui.fragment.wellcome.WalkThroughtFragment1"
+        android:label="WalkThroughtFragment1" >
+        <action
+            android:id="@+id/action_walkThroughtFragment1_to_walkThroughtFragment2"
+            app:destination="@id/walkThroughtFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/walkThroughtFragment2"
+        tools:layout="@layout/fragment_walkthrounght2"
+        android:name="com.example.qrscan.ui.fragment.wellcome.WalkThroughtFragment2"
+        android:label="WalkThroughtFragment2" >
+        <action
+            android:id="@+id/action_walkThroughtFragment2_to_walkThroughtFragment3"
+            app:destination="@id/walkThroughtFragment3"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/walkThroughtFragment3"
+        tools:layout="@layout/fragment_walkthrounght3"
+        android:name="com.example.qrscan.ui.fragment.wellcome.WalkThroughtFragment3"
+        android:label="WalkThroughtFragment3"
+        >
+        <action
+            android:id="@+id/action_walkThroughtFragment3_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/walkThroughtFragment1"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.example.qrscan.ui.fragment.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>

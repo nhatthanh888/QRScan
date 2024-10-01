@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tvEnable"
+            android:layout_height="wrap_content"
+            android:text="@string/Enable_Diagnostics"
+            android:textAppearance="@style/style_question_dialog_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:id="@+id/swVibrate"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:shadowColor="#C6C6C6"
+            android:thumb="@drawable/thumb"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvEnable"
+            app:layout_constraintTop_toTopOf="parent"
+            app:track="@drawable/custom_track_switch" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

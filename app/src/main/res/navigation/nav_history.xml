@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_history"
+    app:startDestination="@id/historyScanFragment">
+
+    <fragment
+        android:id="@+id/historyScanFragment"
+        tools:layout="@layout/history_scan_fragment"
+        android:name="com.example.qrscan.ui.fragment.history.HistoryScanFragment"
+        android:label="HistoryScanFragment" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_historyScanFragment_to_createHistoryFragment"
+            app:destination="@id/createHistoryFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_historyScanFragment_to_scanHistoryFragment"
+            app:destination="@id/scanHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createHistoryFragment"
+        tools:layout="@layout/fragment_create_history"
+        android:name="com.example.qrscan.ui.fragment.history.CreateHistoryFragment"
+        android:label="CreateHistoryFragment" />
+    <fragment
+        tools:layout="@layout/fragment_scan_history"
+        android:id="@+id/scanHistoryFragment"
+        android:name="com.example.qrscan.ui.fragment.history.ScanHistoryFragment"
+        android:label="ScanHistoryFragment" />
+</navigation>

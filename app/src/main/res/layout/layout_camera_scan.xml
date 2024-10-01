@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/barcodeScanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.qrscan.customcamera.ViewFinderOverlay
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layerType="software"
+            app:layout_constraintBottom_toBottomOf="@id/lottieAnim"
+            app:layout_constraintEnd_toEndOf="@id/lottieAnim"
+            app:layout_constraintStart_toStartOf="@id/lottieAnim"
+            app:layout_constraintTop_toTopOf="@id/lottieAnim"
+            tools:ignore="MissingClass" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivScanView"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:src="@drawable/barcode_scan_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="0dp"
+            android:id="@+id/lottieAnim"
+            app:lottie_rawRes="@raw/data"
+            app:lottie_autoPlay="true"
+            android:layout_marginHorizontal="@dimen/_36sdp"
+            app:lottie_loop="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_64sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="@string/Align_QR_Code_Barcode_within_in_frame_to_scan"
+            android:textAppearance="@style/style_text_note_scan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            layout="@layout/layout_notify_multiple_scan"/>
+
+        <include
+            android:id="@+id/layoutScanOption"
+            layout="@layout/layout_scan_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_64sdp"
+            android:layout_marginBottom="@dimen/_100sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <include
+            android:id="@+id/layoutMultipleScan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_32sdp"
+            layout="@layout/layout_notify_multiple_scan"/>
+
+        <include
+            android:id="@+id/layoutFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_32sdp"
+            layout="@layout/layout_faq"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

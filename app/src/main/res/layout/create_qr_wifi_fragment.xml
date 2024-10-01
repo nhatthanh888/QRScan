@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/WiFi"
+        android:textAppearance="@style/style_title_toolbar"
+        app:layout_constraintBottom_toTopOf="@id/vLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintBottom_toTopOf="@id/vLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#EDEDED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_toolbar" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:tabTextAppearance="@style/style_text_tabLayout"
+        android:background="@drawable/custom_bg_tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabIndicatorColor="@null"
+        app:tabIndicatorGravity="stretch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabIndicator="@drawable/custom_tab_selected"
+        app:tabMode="fixed"
+        app:layout_constraintTop_toBottomOf="@id/vLine"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#B3B3B3" >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:text="@string/Free"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:text="@string/WPA_WPA2"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:text="@string/Wep"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.tabs.TabLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

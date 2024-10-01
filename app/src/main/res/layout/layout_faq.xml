@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout"
+        android:visibility="gone"
+        android:background="@drawable/bg_notify_scan"
+        android:layout_height="@dimen/_48sdp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:id="@+id/ivbDelete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/btn_delete_scan"
+            android:src="@drawable/ic_delete_multiple_scan"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:text="@string/FAQs"
+            android:paddingTop="@dimen/_3sdp"
+            android:id="@+id/btnFaq"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:textAppearance="@style/style_done"
+            android:background="@drawable/btn_done_scan"
+            android:layout_height="@dimen/_30sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintEnd_toStartOf="@id/btnFaq"
+            android:text="@string/How_to_scan_QR_codes"
+            android:id="@+id/tvQuestion"
+            android:textAppearance="@style/style_multiple_scan"
+            app:layout_constraintStart_toEndOf="@id/ivbDelete"
+            android:layout_marginStart="@dimen/_16sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

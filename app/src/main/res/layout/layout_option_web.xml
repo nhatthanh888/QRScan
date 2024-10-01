@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutOptionWeb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnTextHttps"
+            android:layout_width="@dimen/_57sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_unselect"
+            android:gravity="center"
+            android:text="@string/httpsOption"
+            android:textColor="@color/bottom_nav_unselect"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnTextHttp"
+            android:layout_width="@dimen/_57sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_unselect"
+            android:gravity="center"
+            android:text="@string/httpOption"
+            android:textColor="@color/bottom_nav_unselect"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnTextWww"
+            android:layout_width="@dimen/_57sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_unselect"
+            android:gravity="center"
+            android:text="@string/wwwOption"
+            android:textColor="@color/bottom_nav_unselect"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnTextCom"
+            android:layout_width="@dimen/_57sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_unselect"
+            android:gravity="center"
+            android:text="@string/comOption"
+            android:textColor="@color/bottom_nav_unselect"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

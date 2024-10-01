@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/scanFragment">
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.qrscan.ui.fragment.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.example.qrscan.ui.fragment.create.CreateQRFragment"
+        android:label="CreateQRFragment"
+        tools:layout="@layout/create_fragment" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.qrscan.ui.fragment.setting.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.qrscan.ui.fragment.history.FragmentHistoryNAV"
+        android:label="HistoryScanFragment"
+        tools:layout="@layout/fragment_history_n_a_v" />
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.example.qrscan.ui.fragment.scan.ScanAndResultFragment"
+        android:label="FragmentScan"
+        tools:layout="@layout/fragment_scan_and_result" />
+</navigation>

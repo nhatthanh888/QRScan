@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/color_bg_tab_wifi"></solid>
+    <stroke
+        android:width="1.5dp"
+        android:color="@color/color_stroke_recyler_qr_result"></stroke>
+    <corners android:radius="@dimen/_12sdp"></corners>
+</shape>

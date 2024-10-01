@@ -1,0 +1,304 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="facebook_app_id">1293013548078632</string>
+    <string name="fb_login_protocol_scheme">fb1293013548078632</string>
+    <string name="facebook_client_token">88888888</string>
+
+    <string name="app_name">QRScan</string>
+    <string name="Scan">Scan</string>
+    <string name="google_map_api_key">AIzaSyCAnFJgtOERs2JT5AVZSake7gcw1b_A7cs</string>
+    <string name="Website">Website</string>
+    <string name="Contact">Contact</string>
+    <string name="Text">Text</string>
+    <string name="FAQs">FAQs</string>
+    <string name="Message">Message</string>
+    <string name="Phone">Phone</string>
+    <string name="Please_input_Barcode">Please input Barcode</string>
+    <string name="Scanned">Scanned</string>
+    <string name="YouTube_Video_ID">YouTube Video ID</string>
+    <string name="YouTube_URL">YouTube URL</string>
+    <string name="YouTube_CHANNEL">YouTube Channel</string>
+    <string name="Username">Username ID*</string>
+    <string name="Profile_ID">Profile ID*</string>
+    <string name="e_g_JohnDoe">e.g. JohnDoe</string>
+    <string name="how_scan">How do i scan a QR code or barcode?</string>
+    <string name="Please_enter_weblink" tools:ignore="TypographyEllipsis">Please enter weblink: http://...</string>
+    <string name="Open_in_Browser">Open in Browser</string>
+    <string name="Open_Facebook">Open Facebook</string>
+    <string name="Open_Instagram">Open Instagram</string>
+    <string name="Open_Whatsapp">Open Whatsapp</string>
+    <string name="Open_Twitter">Open Twitter</string>
+    <string name="Open_Tiktok">Open Tiktok</string>
+    <string name="Open_Youtube">Open Youtube</string>
+    <string name="Open_in_System_Browser">Open in System Browser</string>
+    <string name="Result">Result</string>
+    <string name="Location_Name">Location Name</string>
+    <string name="QR">QR</string>
+    <string name="Product">Product</string>
+    <string name="Grant_Access">Grant Access</string>
+    <string name="To_scan_codes_from_the_camera_please_grant_access_in_the_Settings">To scan codes from the camera, please grant access in the Settings</string>
+    <string name="No_access_to_the_camera">No access to the camera</string>
+    <string name="Code_Type">Code Type</string>
+    <string name="Element">Element</string>
+
+    <string name="While_we_strive">While we strive to offer helpful information, the vastness of data may limit our ability to provide specific details every time. For additional information, consider using a Web Search.
+</string>
+    <string name="If_a_Web_Search">If a Web Search proves insufficient in finding the information you seek, it\'s possible that the code itself contains limited information. Your understanding is appreciated.
+</string>
+
+    <string name="Special_Conditions_for_Links">+Special Conditions for Links:</string>
+    <string name="Certain_web_links">Certain web links may require specific conditions for access, such as the use of a designated app. Please adhere to the instructions provided by the QR code provider.</string>
+
+    <string name="Possible_Creator_Errors">+Possible Creator Errors:</string>
+    <string name="The_inability_to_open_the_website">The inability to open the website could be due to the QR code creator entering the wrong link or the code expiring. Consider confirming the accuracy of the QR code with the creator.</string>
+
+    <string name="App_Limitations">+App Limitations:</string>
+    <string name="Our_app_does_not_have_the_capability">Our app does not have the capability to alter the content of the QR code. If you encounter difficulty accessing the website, it\'s likely an issue with the website itself. Unfortunately, we have no control over this.</string>
+
+    <string name="Ensure_Code_Legibility">+ Ensure Code Legibility:</string>
+    <string name="Warning_for_Low_Quality_Cameras">+ Warning for Low-Quality Cameras:</string>
+    <string name="Wi_Fi_Connectivity_Troubles">+ Wi-Fi Connectivity Troubles?</string>
+    <string name="Coverage_Check_and_Credentials">Coverage Check and Credentials:</string>
+
+    To achieve precise scanning results, ensure that the code adheres to the following criteria:
+    - High contrast and non-blurriness.
+    - Absence of light reflections or shadows on the code.
+    - Completeness, with no missing parts.
+
+    <string name="To_achieve_precise_scanning_results">To achieve precise scanning results, ensure that the code adheres to the following criteria:</string>
+    <string name="High_contrast_and_non_blurriness.">- High contrast and non-blurriness.</string>
+    <string name="Absence_of_light_reflections_or_shadows_on_the_code">- Absence of light reflections or shadows on the code..</string>
+    <string name="Completeness_with_no_missing_parts">- Completeness, with no missing parts.</string>
+
+    <string name="If_you_are_using">If you\'re using a low-end phone with a subpar camera, scanning may prove challenging or even impossible.
+Consider taking a clear photo using your phone\'s camera app. Then, open our app and select \'Scan from the gallery\' to resolve this issue.
+No Results? Reach Out!
+</string>
+
+    <string name="If_scanning_the_barcode">If scanning the barcode or QR code yields no results, please send us an email via feedback. We are dedicated to resolving the issue for you promptly.
+Gmail: eyestormpteltd@gmail.com
+</string>
+
+
+    <string name="Confirm_that">Confirm that you are within the Wi-Fi coverage area, and double-check the accuracy of the Wi-Fi username and password.
+If connection troubles persist, consult the QR code provider to inquire about any recent changes to the Wi-Fi password.
+Text Result? Manual Wi-Fi Connection:
+</string>
+
+    <string name="If_the_scan_result">If the scan result displays as text, manually connect to Wi-Fi in your phone\'s network settings.
+Utilize the provided Wi-Fi name and password from the text to establish the connection.
+</string>
+
+    <string name="Open_the_QR_code_scanning_application">1.Open the QR code scanning application.</string>
+    <string name="Go_to_Scan_section">2.Go to Scan section, point the camera towards the code (Make sure you hold your phone steady so the camera can easily recognize the code.)</string>
+    <string name="Wait_for_successful_scan">3.Wait for successful scan:</string>
+
+    <string name="Scan_the_QR_code">
+        Once your phone\'s camera has detected the QR code, you\'ll see a notification or feel a slight vibration (depending on the app you\'re using).The phone screen will display the information or go to the destination that the QR code is representing.</string>
+
+    <string name="Automatically_display_product_information_about_that_QR_code">4.Automatically display product information about that QR code</string>
+    <string name="Open_the_camera_on_your_mobile_phone">1.Open the camera on your mobile phone</string>
+    <string name="Look_for_a_square_icon_that_resembles_a_QR_code_on_the_screen">2.Look for a square icon that resembles a QR code on the screen.</string>
+    <string name="Go_to_the_App_and_select_a_photo_from_the_library">3.Go to the App and select a photo from the library</string>
+
+
+    <string name="Scan_the_QR_code_on_the_app">+ Scan the QR code on the app:</string>
+    <string name="Using_a_camera_phone">+ Using a camera phone:</string>
+
+    <string name="How_to_scan_QR_codes">How to scan QR codes?</string>
+    <string name="Code_can_not_be_read">Code can\’t be read?</string>
+    <string name="Problem_with_the_link_you_get">Problem with the link you get ?</string>
+    <string name="Need_More_Information">Need More Information?</string>
+
+    <string name="Summary">Summary</string>
+    <string name="Enter_the_Barcode">Enter the Barcode</string>
+    <string name="http">http://</string>
+    <string name="Enter_address">Enter address</string>
+    <string name="Enter_event_title">Enter event title</string>
+    <string name="End_Date">End Date</string>
+    <string name="Event_Title">Event Title</string>
+    <string name="Start_Date">Start Date</string>
+    <string name="WiFi_Type">Wi-Fi Type</string>
+    <string name="Show_Location">Show Location</string>
+    <string name="enter_location_name">Enter Location Name</string>
+    <string name="latitude">Latitude*</string>
+    <string name="longtitude">Longtitude*</string>
+    <string name="Add_to_Calendar">Add to Calendar</string>
+    <string name="Search_in_Google">Search in Google</string>
+    <string name="Send_Email">Send Email</string>
+    <string name="Go_to_Settings">Go to Wifi Settings</string>
+    <string name="Add_to_Contact">Add to Contact</string>
+    <string name="Enter_WiFi_Name">Enter Wi-Fi Name</string>
+    <string name="Enter_WiFi_Password">Enter Wi-Fi Password</string>
+    <string name="WiFi_Name">Wi-Fi Name</string>
+    <string name="WiFi_Password">Wi-Fi Password</string>
+    <string name="Free">Free</string>
+    <string name="Wep">WEP</string>
+    <string name="star_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="name">Name</string>
+    <string name="Password">Password</string>
+    <string name="batch_scan">Batch Scan</string>
+    <string name="done">Done</string>
+    <string name="scans">Scans</string>
+    <string name="WPA_WPA2">WPA/WPA2</string>
+    <string name="Enter_your_text">Enter your text</string>
+    <string name="Example_email">Example: abc@gmail.com</string>
+    <string name="Email">Email</string>
+    <string name="URL">URL</string>
+    <string name="valid_social">Input field required</string>
+    <string name="Note">Note</string>
+    <string name="Birthday">Birthday</string>
+    <string name="Nickname">Nickname</string>
+    <string name="Address">Address</string>
+    <string name="Enter_note">Enter Note</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="First_name">First Name</string>
+    <string name="Last_name">Last Name</string>
+    <string name="Background_Color">Background Color</string>
+    <string name="Save">Save</string>
+    <string name="Customize">Customize</string>
+    <string name="code_color">Code color</string>
+    <string name="Call_Phone">Call Phone</string>
+    <string name="OK">OK</string>
+    <string name="Do_not_Allow">Don\’t Allow</string>
+    <string name="permission_dialog">“WG QR Scanner” Would Like to Access Your Contacts</string>
+    <string name="Enter_Phone_Number">Enter Phone Number</string>
+    <string name="Save_to_Photos">Save to Photos</string>
+    <string name="Created">Created</string>
+    <string name="Content_dialog">Granting contacts permission, you can save the code to the album and share it with your friends, please allow authorization. Don\’t worry, we will not collect and store your information and will not upload it to the server.</string>
+    <string name="This_is_simple_QR_code">This is simple QR code</string>
+    <string name="Recently_scanned">Recently Scanned</string>
+    <string name="Recently_created">Recently Created</string>
+    <string name="Continue">Continue</string>
+    <string name="Personal">Personal</string>
+    <string name="Mail">Mail</string>
+    <string name="today">Today</string>
+    <string name="you_scanned_this_QR_code_already">You scanned this QR code already</string>
+    <string name="Calendar">Calendar</string>
+    <string name="Location">Location</string>
+    <string name="Barcode">Barcode</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Instagram">Instagram</string>
+    <string name="Twitter">Twitter</string>
+    <string name="Tiktok">Tiktok</string>
+    <string name="Vibrate">Vibrate</string>
+    <string name="Sound">Sound</string>
+    <string name="Search">Search</string>
+    <string name="Search_Engine">Search Engine</string>
+    <string name="YouTube">YouTube</string>
+    <string name="username">Username</string>
+    <string name="Twitter_Username">Twitter’s Username*</string>
+    <string name="facebook_id">Facebook ID</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_id2">Facebook ID*</string>
+    <string name="username_id">Username ID</string>
+    <string name="profile_url">Profile URL</string>
+
+    <string name="video_id">Video ID</string>
+    <string name="video_url">Video URL</string>
+    <string name="facebook_url">Facebook URL</string>
+    <string name="video_id2">Video ID*</string>
+    <string name="channel_id">Channel ID</string>
+    <string name="channel_url">Channel URL</string>
+    <string name="Rate_Us_Stars">Rate Us 5 Stars</string>
+    <string name="WhatsApp">WhatsApp</string>
+    <string name="Feedback">Feedback</string>
+    <string name="About">About</string>
+    <string name="Terms_of_Use">Terms of Use</string>
+    <string name="Privacy_Policy">Privacy Policy</string>
+    <string name="Share_Our_App">Share Our App</string>
+    <string name="You_do_not_have_any_favourite_scan_item_yet_Start_scan_to_add_to_favourite_list">You don\’t have any favourite scan item yet!
+Start scan to add to favourite list.</string>
+    <string name="Nothing_to_show">Nothing to show</string>
+    <string name="WiFi">Wi-Fi</string>
+    <string name="Social_Media_Links">Social Media Links</string>
+    <string name="Restore">Restore</string>
+    <string name="History">History</string>
+    <string name="No_QR_found">No QR found</string>
+    <string name="Create">Create</string>
+    <string name="You_do_not_have_any_scanned_code_Start_scanning_the_new_one">You don\’t have any scanned codes. Start scanning the new one!</string>
+    <string name="Favorite">Favorite</string>
+    <string name="You_must_allow_the_application_to_access_the_camera_to_scan">You must allow the application to access the camera to scan</string>
+    <string name="Settings">Settings</string>
+    <string name="General">General</string>
+    <string name="Align_QR_Code_Barcode_within_in_frame_to_scan">Align QR Code/Barcode within in frame to scan</string>
+    <string name="Developer">Developer</string>
+    <string name="PREMIUM">PREMIUM</string>
+    <string name="Advanced_QR_Templates">Advanced QR Templates</string>
+    <string name="Unlimited_Scans_And_Exports">Unlimited Scans &amp; Exports</string>
+    <string name="Custome_QR_Codes">Custome QR Codes</string>
+    <string name="Batch_Scan">Batch Scan</string>
+    <string name="Delete">Delete</string>
+    <string name="Question_when_delete">Are you sure you want to clear this item?</string>
+    <string name="clear_batch">Clear batch scan</string>
+    <string name="QR_Scanner">QR Scanner</string>
+    <string name="label_select_picture">Select picture</string>
+    <string name="you_should_enable_storage_permission">You should enable read storage permission!</string>
+    <string name="you_should_change_setting_permission">You should enable change setting permission!</string>
+    <string name="BASIC">BASIC</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="Invalid_coordinate">Invalid coordinate</string>
+    <string name="google">Google</string>
+    <string name="bing">Bing</string>
+    <string name="Let_us_know_by_leaving_a_5_star_rating">Let us know by leaving a 5 star rating</string>
+    <string name="How_do_you_like_our_app">How do you like our app?</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="VersionApp">Version: 1.32.5038</string>
+    <string name="Diagnostics_help_the_developers_to_improve_the_app_by_automatically_sending_anonymized_diagnostics_data">Diagnostics help the developers to improve the app by automatically sending anonymized diagnostics data.</string>
+    <string name="Developed_by_WeeGoon_Global">Developed by WeeGoon Global</string>
+    <string name="Thanks">Thanks!</string>
+    <string name="Enable_Diagnostics">Enable Diagnostics</string>
+    <string name="Ecosia">Ecosia</string>
+    <string name="Yandex">Yandex</string>
+    <string name="term_of_service">Terms of Services</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="DuckDuckGo">DuckDuckGo</string>
+    <string name="Unlimited_Access">Unlimited Access</string>
+    <string name="Terms_of_Services_And_Privacy_Policy">Terms of Services\t\t\t\t|\t\t\t\tPrivacy Policy</string>
+    <string name="Automatically_renews_until_cancelled">Automatically renews until cancelled.</string>
+    <string name="TRY_FREE">TRY FREE</string>
+    <string name="No_commitment_Cancel_anytime">No commitment. Cancel anytime</string>
+    <string name="three_days_free_then_only_799000đ_year">3 days free, then only 799.000đ/year</string>
+    <string name="Share_your_information_or_everything_with_customized_QR_codes">Share your information or everythingwith customized QR codes</string>
+    <string name="Customize_QR_Code">Customize QR Code</string>
+    <string name="QR_Barcode_Datamatrix_and_others" tools:ignore="TypographyEllipsis">QR, Barcode, Datamatrix, and others...</string>
+    <string name="Scan_Any_Codes">Scan Any Codes</string>
+    <string name="scan_and_generator">Scan &amp; Generator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="font_not_support_flash">Flash does not support front camera</string>
+    <string name="back_not_support_flash">flash not found</string>
+    <!--    text for create qr function-->
+    <string name="txt_invalid_url">invalid url,please try again</string>
+    <string name="txt_invalid_phone">invalid phone number</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_email_address">Email address</string>
+    <string name="txt_note">Note</string>
+    <string name="txt_birthday">Birthday</string>
+    <string name="txt_nickname">Nickname</string>
+    <string name="txt_address">Address</string>
+    <string name="_12345678">12345678</string>
+    <string name="text_save_done">Saved</string>
+    <string name="save_error">Save error</string>
+    <string name="msg_add_contact_is_error">Can\'t add to contact, have an error, please try again later!</string>
+    <string name="_21_034187">21.034187</string>
+    <string name="https">https://</string>
+    <string name="id">ID</string>
+    <string name="e_g_01234567890">e.g. 01234567890</string>
+    <string name="phone_number">Phone Number*</string>
+    <string name="action">action</string>
+    <string name="enter_youtube_video_id">Enter YouTube Video ID</string>
+    <string name="enter_video_url">Enter Video UrL</string>
+    <string name="enter_channel_url">Enter Channel UrL</string>
+    <string name="enter_facebook_url">Enter Facebook URL</string>
+    <string name="enter_instagram_url">Enter Instagram URL</string>
+    <string name="enter_twitter_url">Enter Twitter URL</string>
+    <string name="httpsOption">https://</string>
+    <string name="httpOption">http://</string>
+    <string name="wwwOption">www</string>
+    <string name="comOption">.com</string>
+    <string name="share">Share</string>
+    <string name="view_all">View all</string>
+</resources>

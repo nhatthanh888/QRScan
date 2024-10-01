@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+<variable
+    name="model"
+    type="com.example.qrscan.data.model.DeveloperSetting" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingVertical="@dimen/_9sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/layout"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivVibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@{model.icon}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:gravity="center"
+            android:text="@{model.setting}"
+            android:textAppearance="@style/style_item_setting"
+            app:layout_constraintBottom_toBottomOf="@+id/ivVibrate"
+            app:layout_constraintStart_toEndOf="@id/ivVibrate"
+            app:layout_constraintTop_toTopOf="@+id/ivVibrate" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/ivArrow"
+            android:layout_height="wrap_content"
+            android:src="@{model.iconArrow}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
