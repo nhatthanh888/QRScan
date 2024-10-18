@@ -12,6 +12,7 @@ class Bridge private constructor() {
 
     // List Product IAP
     var COIN_50: String = "appservicestest_50_coin"
+
     var NOADS: String = "appservicestest_noads"
     var SUBSCRIPTION: String = "appservicestest_vip_subscription"
 
